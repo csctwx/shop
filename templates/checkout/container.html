@@ -1,0 +1,21 @@
+<div id="checkoutController" ng-controller="checkoutController as checkoutController">
+  <div ng-show="app.isCurrentContext(pathMap._checkout._hash)">
+		<section class="progressArrows">
+			<ul>
+				<li><a class="{{checkoutController.step==1?'current':''}}"><i class="glyphicon glyphicon-ok-sign"></i>Shipping/Billing</a></li>
+				<li><a class="{{checkoutController.step==2?'current':''}}"><i class="glyphicon glyphicon-info-sign"></i>Review &amp; Purchase</a></li>
+				<li><a class="{{checkoutController.step==3?'current':''}}"><i class="glyphicon glyphicon-info-sign"></i>Confirmation</a></li>
+			</ul>
+		</section>
+    <div style="min-height:80px;padding:50px" ng-show="checkoutController.data.equipments.length==0 && checkoutController.step!=3">
+      <h2 ng-show="checkoutController.data.equipments.length==0">Your Cart is empty</h2>
+      <br/>
+      <a style="padding-left:200px;" href="{{pathMap._phones._hash}}">Go To Shopping ...</a>
+    </div>
+    <checkout-step1 ng-show="checkoutController.step==1 && checkoutController.data.equipments.length!=0"></checkout-step1>
+    <checkout-step2 ng-show="checkoutController.step==2 && checkoutController.data.equipments.length!=0"></checkout-step2>
+    <checkout-step3 ng-show="checkoutController.step==3 && !checkoutController.data.error"></checkout-step3>
+    <checkout-step3-in-error ng-show="checkoutController.step==3 && checkoutController.data.error"></checkout-step3-in-error>
+    <checkout-legal></checkout-legal>
+  </div>
+</div>

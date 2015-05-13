@@ -1,0 +1,135 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "d51026f8-fe19-41d1-9726-2d35d7bf4665",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"getPhoneDetailsResponse": {
+				"phoneDetails": {
+					"phoneDetail": {
+						"phoneName": {
+							"$": "Galaxy Core Prime™"
+						},
+						"manufacturerName": {
+							"$": "Samsung"
+						},
+						"extendedDescription": {
+							"$": "Get a simple and elegant design built with a durable frame. With a thickness of just 8.8 mm, the Galaxy Core Prime fits comfortably in one hand or in your pocket, making it easy to carry with you anywhere."
+						},
+						"associatedAccessoryId": {
+							
+						},
+						"isRedVentures": {
+							"$": "false"
+						},
+						"disclaimerMini": {
+							"$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+						},
+						"disclaimerFull": {
+							"$": "Limited time only, while supplies last. Android™ is a trademark of Google, Inc."
+						},
+						"phoneViewImages": {
+							"phoneViewImage": [{
+								"fileName": {
+									"$": "hero"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/i\/a\/hero.png?action=access&assetId=A-yrg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "back"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/c\/d\/back.png?action=access&assetId=A-yrg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "front"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/i\/a\/front.png?action=access&assetId=A-yrg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "leftback"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/d\/i\/j\/leftback.png?action=access&assetId=A-yrg6XVKM1TW"
+								}
+							},
+							{
+								"fileName": {
+									"$": "right"
+								},
+								"uRI": {
+									"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/e\/d\/right.png?action=access&assetId=A-yrg6XVKM1TW"
+								}
+							}]
+						},
+						"phoneVariants": {
+							"phoneVariant": {
+								"sku": {
+									"$": "SPHG360ASB"
+								},
+								"memoryVariant": {
+									
+								},
+								"colorVariant": {
+									
+								},
+								"gradientColor": {
+									
+								},
+								"msrp": {
+									"$": "129.99"
+								},
+								"discount": {
+									"$": "19.99"
+								},
+								"price": {
+									"$": "110.00"
+								},
+								"inventory": {
+									"$": "in-stock"
+								},
+								"isDefault": {
+									"$": "true"
+								},
+								"shopGridPicture": {
+									"fileName": {
+										"$": "phonewall"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/a\/e\/phonewall.png?action=access&assetId=A-yrg6XVKM1TW"
+									}
+								},
+								"heroImage": {
+									"fileName": {
+										"$": "hero"
+									},
+									"uRI": {
+										"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/i\/a\/hero.png?action=access&assetId=A-yrg6XVKM1TW"
+									}
+								},
+								"hiddenPrice": {
+									"$": "true"
+								}
+							}
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

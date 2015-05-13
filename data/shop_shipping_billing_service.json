@@ -1,0 +1,19 @@
+{
+   "addressValid": true,
+   "paymentValid": true,
+   "equipments": [   {
+      "orderLineId": "1",
+      "modelId": "123",
+      "modelPrice": 100,
+      "equipmentTaxAmt": 8.25,
+      "accessoryInd": false,
+      "taxTransactionId": 1000116105,
+      "invoiceDate": null,
+      "quantity": 1,
+      "totalAmt": 108.25
+   }],
+   "transactionId": "SPP_SALES_3177180376",
+   "orderId": "SPP_ORDER_6305112463",
+   "status": 0,
+   "description": "SUCCESS"
+}

@@ -1,0 +1,80 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "2681bb1e-68b1-4906-a842-badacc720286",
+			"@class": "",
+			"@name": "section_top",
+			"@position": "layout_left",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-AFh6XVKM1TW"
+					},
+					"name": {
+						"$": "Shop Page Promo Phones"
+					},
+					"url": {
+						"$": "#!\/home\/shop\/phones\/"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/i\/a\/d\/promo-half-03.png?action=access&assetId=A-AFh6XVKM1TW"
+					},
+					"title": {
+						"$": "No contract phones"
+					},
+					"description": {
+						"$": "Whether you're looking for an Android smartphone that runs the latest apps or an affordable feature phone, Sprint Prepaid has a device for you. All without annual contracts."
+					},
+					"linkText": {
+						"$": "Shop phones"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		},
+		{
+			"@uuid": "1d123e86-c6a7-411e-ab4f-a2bc48646b05",
+			"@class": "",
+			"@name": "section_top",
+			"@position": "layout_right",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-BFh6XVKM1TW"
+					},
+					"name": {
+						"$": "Shop Page Promo Plans"
+					},
+					"url": {
+						"$": "#!\/home\/page\/plans\/"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/b\/f\/c\/promo-half-01.jpg?action=access&assetId=A-BFh6XVKM1TW"
+					},
+					"title": {
+						"$": "Plans as low as $35\/month"
+					},
+					"description": {
+						"$": "Great value. Total flexibility. Get unlimited talk and text with data options from just $35\/month. Stay connected without breaking the bank."
+					},
+					"linkText": {
+						"$": "Explore plans"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

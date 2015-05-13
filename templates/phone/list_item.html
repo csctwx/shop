@@ -1,0 +1,45 @@
+<div ng-repeat="item in phoneController.list.getResultList()" class="col-sm-6 phone {{phoneController.getDiscountClass(item)}}">
+	<div class="col-xs-12">
+    <h3 class="title"><a ng-href="{{pathMap._phoneDetails._hash}}{{item.id}}/"><span class="phoneBrand">{{item.brand}}</span><span class="phoneName">{{ item.name }}</span></a></h3>
+    <p class="rating" ng-show="item.ReviewStatistics">
+      <span>
+        {{phoneController.getRateStarClass(item.ReviewStatistics.AverageOverallRating)}}
+      </span>
+      <a class="reviews">{{item.ReviewStatistics.TotalReviewCount}}</a>
+    </p>
+  </div>
+  <div class="col-xs-4" style="cursor:pointer" onclick="location.hash=this.id" id="{{pathMap._phoneDetails._hash}}{{item.id}}/">
+    <a href="javascript:"><img style="display:none" onload="$(this).show()" src="{{item.selectedVariant.gridImage}}"></img></a>
+  </div>
+  <div class="col-xs-8">
+    <p class="shippingNotice"><b>FREE Shipping.</b> All the time. Ship to anywhere in the United States for free.</p>
+
+    <div class="colorOptions" ng-show="item.colorOptions.length>1">
+      <span ng-repeat="color in item.colorOptions" ng-init="color">
+        <input type="radio" name="variantColor" value="{{color}}" id="{{color}}" ng-model="item.selectedColor" ng-click="item.updateSelectedVariant()"><label for="{{color}}" style="background:{{item.colorValues[color]}}">{{color}}</label></input>
+      </span>
+    </div>
+
+    <div class="memOptions" ng-show="item.memoryOptions.length>1">
+      <span ng-repeat="mem in item.memoryOptions" ng-init="mem">
+        <input type="radio" name="variantMemory" value="{{mem}}" id="{{mem}}" ng-model="item.selectedMemory" ng-click="item.updateSelectedVariant()"><label for="{{mem}}">{{mem}}</label></input>
+      </span>
+    </div>
+    <div class="col-xs-12 prices" ng-if="!item.selectedVariant.hiddenPrice">
+      <p class="phoneRetailPrice" ng-show="item.selectedVariant.msrp">
+        <span class="pull-left">Retail Price</span>{{item.selectedVariant.msrp | currency:""}}</p>
+      <p class="phonePromoDiscount" ng-show="item.selectedVariant.discount"><span class="pull-left">Promotional discount</span>{{item.selectedVariant.discount}}</p>
+      <h2 class="phoneFinalPrice">{{item.selectedVariant.price|currency:""}}</h2>
+      <span class="limitPerCustomer">{{item.disclaimerMini}}</span>
+    </div>
+  </div>
+  <div class="col-xs-12 phoneBottom">
+    <label class="pull-left"><input type="checkbox" ng-checked="phoneController.compareItems.isInclude(item)" ng-click="phoneController.compareItems.handleItem(item)">{{phoneController.compareItems.isInclude(item)?'Remove':'Add to compare'}}</input></label>
+    <div class="pull-right">
+      <form class="actions">
+      <a class="btn" ng-href="{{pathMap._phoneDetails._hash}}{{item.id}}/">Learn More</a>
+      <a class="btn btn-primary" ng-click="cartController.addToCart(item)" ng-disabled="item.selectedVariant==null || item.selectedVariant.noMore">{{item.selectedVariant.cartLabel}}</a>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<section>
+  <section class="banner">
+    <!--banner-item url="get_banner_phone_grid" key="0"></banner-item-->
+    <a href="{{pathMap._plan._hash}}"><img src="img/banner-03.jpg"></img></a>
+  </section>
+  <phone-list-reason></phone-list-reason>
+  <section>
+    <div class="col-xs-12 filter visible-xs visible-sm">
+      <div class="col-xs-6">
+        <a class="btn btn-default btn-block" data-toggle="modal" data-target="#modalTest">Filter</a>
+      </div>
+      <div class="modal fade" id="modalTest" tabindex="-1" role="dialog" aria-labelledby="modalTest" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <phone-list-filter></phone-list-filter>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="dropdown">
+          <phone-list-sort></phone-list-sort>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-2 filter hidden-xs hidden-sm">
+      <phone-list-compare-mini></phone-list-compare-mini>
+      <phone-list-filter></phone-list-filter>
+    </div>
+
+    <div class="col-xs-12 col-md-10" id="phoneListArea">
+      <div class="col-xs-12 sorting hidden-xs hidden-sm">
+        <div class="dropdown pull-left">
+          <phone-list-sort></phone-list-sort>
+        </div>
+        <p class="results pull-right" id="results"><span>{{ phoneController.list.getResultList().length }}</span> of <span>{{ phoneController.list.data.length }}</span></p>
+      </div>
+      <phone-list-item></phone-list-item>
+      <a class="pull-right btn btn-block btn-default backtotop" href="javascript:appUtil.refreshContent()">Back to Top</a>
+    </div>
+  </section>
+  <phone-list-legal></phone-list-legal>
+</section>

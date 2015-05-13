@@ -1,0 +1,27 @@
+<div>
+  <div class="panel-body filter">
+    <h4>Filter Phones</h4>
+    <label><input type="checkbox" ng-click="phoneController.list.filter.removeAll()" ng-model="phoneController.list.filter.data.noFilter">View All Results</input></label>
+    <label ng-repeat="option in phoneController.list.filter.data.map.special.options" class="{{option.disabled?'disabled_label':''}}">
+      <input type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">{{option.label}}</input>
+    </label>
+    <a class="clear-results" href="javascript:" ng-click="phoneController.list.filter.removeAll()">Clear all results</a>
+  </div>
+  <div class="panel-group filter">
+    <div class="panel panel-default" ng-repeat="filter in phoneController.list.filter.data.uiSort">
+      <div class="panel-heading" ng-click="filter.extend=!filter.extend">
+        <h4 class="panel-title {{filter.extend?'panel-title-extend':''}}" style="cursor:pointer"><a href="javascript:">{{filter.title}}</a></h4>
+      </div>
+      <div class="panel-collapse collapse {{filter.extend?'in':''}}">
+        <div class="panel-body">
+        <form>
+          <label ng-repeat="option in filter.options" class="{{option.disabled?'disabled_label':''}}">
+            <input type="checkbox" ng-disabled="option.disabled" ng-model="option.checked">{{option.label}}</input>
+          </label>
+        </form> 
+        </div>
+      </div>
+    </div>
+    <a class="clear-results" href="javascript:" ng-click="phoneController.list.filter.removeAll()">Clear all results</a>
+  </div>
+</div>

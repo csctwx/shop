@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="appSprint">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content=""/>
+	<title>Sprint Prepaid - Home</title>
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<link href="css/sprintprepaid-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/jasny-bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/ealsche-framework.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/accordion-slider.css">  
+
+  <link rel="stylesheet" href="css/ngDialog.min.css">
+	<link rel="stylesheet" href="css/ngDialog-theme-default.css">  
+	<script src="js/lib/jquery.min.js"></script>
+  <script src="js/lib/sprintprepaid-bootstrap.min.js"></script>
+  <script src="js/lib/jasny-bootstrap.min.js"></script>
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-messages-1.4.0.js"></script>
+	<script src="js/lib/ngDialog.js"></script>
+  <script src="js/lib/jquery.accordionSlider.min.js"></script>
+  
+  <script type="text/javascript" src="js/common/bvapi.js"></script>
+  <script type="text/javascript" src="js/common/util.js"></script>
+  <script type="text/javascript" src="js/common/data.js"></script>
+	<script src="js/app/pathMap.js"></script>
+	<script src="js/app/app.js"></script>
+	<script src="js/app/phone.js"></script>
+	<script src="js/app/cart.js"></script>
+	<script src="js/app/checkout.js"></script>
+	<script src="js/app/banner.js"></script>
+	<script src="js/app/page.js"></script>
+	<script src="js/app/nextversion.js"></script>
+  <script>
+    appUtil.appVersion=new Date().getTime();
+  </script>
+</head>
+<body ng-controller="appController as app" id="appController">
+    <app-head></app-head>
+    <app-head-mini></app-head-mini>
+    <div class="container main">
+      <app-navigator></app-navigator>
+      <banner></banner>
+      <app-home></app-home>
+      <app-shop></app-shop>
+      <app-plan></app-plan>
+      <phone-container></phone-container>
+      <checkout-container></checkout-container>
+      <page></page>
+      <nextversion></nextversion>
+    </div>
+    <app-footer></app-footer>
+
+  <div style="position:fixed;top:50%;left:50%;margin-top: -140px;margin-left: -240px;z-index:100;display:none" id="loading"><img src="img/loading.gif"/></div>
+
+</body>
+</html>

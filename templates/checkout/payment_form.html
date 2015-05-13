@@ -1,0 +1,65 @@
+<section>
+  <div class="col-xs-12 cc">
+    <h4>Payment Information</h4>
+    <form name="paymentForm">
+    <div class="form-group form-group-sm">
+      <label class="col-sm-2 control-label required">Card Type</label>
+      <!-- Card Types -->
+      <div class="col-xs-12 col-sm-10 credit">
+        <label ng-repeat="paymentCardType in checkoutController.dataOptions.paymentCardType" class="radio-inline {{paymentCardType.id}}">
+          <input type="radio" ng-model="checkoutController.data.paymentInfo.paymentCardType" name="creditCard" value="{{paymentCardType.name}}" required="required"/>
+        </label>
+      </div>
+      <label class="col-sm-2 control-label required" for="cardNumber">Card Number</label>
+      <div class="col-sm-4">
+        <input class="form-control" ng-change="checkoutController.changeStatus.paymentInfo.cardNumber.changed=true" 
+          name="cardNumber" type="text" id="cardNumber" placeholder="Card Number" maxlength="16" 
+          ng-focus="checkoutController.changeStatus.paymentInfo.cardNumber.check=false"
+          ng-blur="checkoutController.changeStatus.paymentInfo.cardNumber.check=true"
+          ng-model="checkoutController.data.paymentInfo.cardNumber" ng-pattern="/^[0-9]{16}$/" required/>
+        <div ng-show="checkoutController.changeStatus.paymentInfo.cardNumber.changed &&
+                      checkoutController.changeStatus.paymentInfo.cardNumber.check &&
+                      paymentForm.cardNumber.$error.required" class="errorMessage">* Card Number is required</div>
+        <div ng-show="checkoutController.changeStatus.paymentInfo.cardNumber.changed &&
+                      checkoutController.changeStatus.paymentInfo.cardNumber.check &&
+                      paymentForm.cardNumber.$error.pattern" class="errorMessage">* Not a valid Card Number</div>
+      </div>
+      <label class="col-sm-2 control-label required" for="expirationMonth">Expiration</label>
+      <div class="col-sm-2 exp">
+        <select id="expirationMonth" ng-change="checkoutController.changeStatus.paymentInfo.expirationMonth.changed=true" name="expirationMonth" 
+          ng-model="checkoutController.data.paymentInfo.expirationMonth" ng-options="month.value as month.label for month in commonData.monthOptions" required="required"></select>
+      </div>
+      <div class="col-sm-2 exp">
+        <select ng-change="checkoutController.changeStatus.paymentInfo.expirationYear.changed=true" name="expirationYear" 
+            ng-focus="checkoutController.changeStatus.paymentInfo.expirationYear.check=false"
+            ng-blur="checkoutController.changeStatus.paymentInfo.expirationYear.check=true"
+            ng-model="checkoutController.data.paymentInfo.expirationYear" 
+            ng-options="year for year in checkoutController.dataOptions.creditCardYear" required="required"></select>
+      </div>
+      <div ng-show="checkoutController.changeStatus.paymentInfo.expirationMonth.changed &&
+                    checkoutController.changeStatus.paymentInfo.expirationMonth.check &&
+                    paymentForm.expirationMonth.$error.required" class="errorMessage">* Expiration Month is required</div>
+      <div ng-show="checkoutController.changeStatus.paymentInfo.expirationMonth.changed &&
+                  checkoutController.changeStatus.paymentInfo.expirationMonth.check &&
+                  paymentForm.expirationMonth.$error.required" class="errorMessage">* Expiration Year is required</div>
+      <label class="col-sm-2 control-label required" for="securityCode">Security Code</label>
+      <div class="col-sm-4 exp">
+        <input class="form-control" ng-change="checkoutController.changeStatus.paymentInfo.securityCode.changed=true" 
+          type="text" name="securityCode" id="securityCode" ng-minlength="{{checkoutController.data.paymentInfo.paymentCardType=='PAYPAL'?4:3}}" 
+          ng-maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='PAYPAL'?4:3}}" maxlength="{{checkoutController.data.paymentInfo.paymentCardType=='PAYPAL'?4:3}}" 
+          ng-model="checkoutController.data.paymentInfo.securityCode" placeholder="Security Code" ng-pattern="/^[0-9]{3,4}$/" required="required" style="width:50%"
+          ng-focus="checkoutController.changeStatus.paymentInfo.securityCode.check=false"
+          ng-blur="checkoutController.changeStatus.paymentInfo.securityCode.check=true"/>
+        <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed" class="errorMessage">
+          <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed &&
+                    checkoutController.changeStatus.paymentInfo.securityCode.check &&
+                    paymentForm.securityCode.$error.required" class="errorMessage">* Security Code is required</div>
+          <div ng-show="checkoutController.changeStatus.paymentInfo.securityCode.changed &&
+                    checkoutController.changeStatus.paymentInfo.securityCode.check &&
+                    (paymentForm.securityCode.$error.pattern || paymentForm.securityCode.$error.minlength || paymentForm.securityCode.$error.maxlength)" class="errorMessage">* Not a valid Security Code</div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</section>

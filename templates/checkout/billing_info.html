@@ -1,0 +1,26 @@
+<section class="billingInfo">
+  <div class="col-xs-12">
+    <h4>Billing Information</h4>
+    <dl>
+      <dt>First Name</dt>
+      <dd>{{checkoutController.data.billingInfo.firstName}}</dd>
+      <dt>Last Name</dt>
+      <dd>{{checkoutController.data.billingInfo.lastName}}</dd>
+      <dt>Address 1</dt>
+      <dd>{{checkoutController.data.billingInfo.address1}}</dd>
+      <dt>Address 2</dt>
+      <dd>{{checkoutController.data.billingInfo.address2}}</dd>
+      <dt>City</dt>
+      <dd>{{checkoutController.data.billingInfo.city}}</dd>
+      <dt>State</dt>
+      <dd>{{checkoutController.data.billingInfo.state}}</dd>
+      <dt>Zip Code</dt>
+      <dd>{{checkoutController.data.billingInfo.zipCode}}</dd>
+      <dt>Phone Number</dt>
+      <dd>{{checkoutController.data.billingInfo.phoneNumber}}</dd>
+      <dt>Email</dt>
+      <dd>{{checkoutController.data.billingInfo.email}}</dd>
+    </dl>
+    <a href="" ng-click="checkoutController.restartCheckout()">Edit information</a>
+  </div>
+</section>

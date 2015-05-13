@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script type="text/javascript" src="../../js/common/bvapi.js"></script>
+
+</head>
+<body>
+ 
+<div id="BVRRContainer"> 
+  <div id="BV_Reviews"> 
+    <script>
+      var bvLink="http://boost.ugc.bazaarvoice.com/static/8149-en_us/bvapi.js";
+      if(window.location.host==="espanol.boostmobile.com"||window.location.search==="?lang=es"){bvLink="http://boost.ugc.bazaarvoice.com/static/8149-en_us/bvapi.js"}
+      shell_sku=parent.document.getElementById("detailId").innerHTML;
+      
+      $BV.configure("global",{submissionContainerUrl:"http://www.boostmobile.com/write-review/"});
+      $BV.ui("rr","show_reviews",{productId:shell_sku});
+    </script> 
+  </div> 
+</div> 
+
+</body>
+</html>

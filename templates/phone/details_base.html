@@ -1,0 +1,38 @@
+<div class="col-sm-6 details {{phoneController.getDiscountClass(phoneController.details.data)}}">
+  <div class="col-xs-12">
+    <h2 class="title"><span class="phoneBrand">{{phoneController.details.data.brand}}</span><span class="phoneName">{{phoneController.details.data.name}}</span><span>{{phoneController.details.data.selectedColor}}</span><span>{{phoneController.details.data.selectedMemory}}</span></h2>
+    <p class="rating" ng-show="phoneController.details.data.ReviewStatistics">
+      <span>
+        {{phoneController.getRateStarClass(phoneController.details.data.ReviewStatistics.AverageOverallRating)}}
+      </span>
+      <a class="reviews">{{phoneController.details.data.ReviewStatistics.TotalReviewCount}}</a>
+      <a>Write a review</a>
+    </p>
+    <p class="longDescription">{{phoneController.details.data.extendedDescription}}</p>
+    <div class="col-xs-12 col-sm-10 prices" ng-if="!phoneController.details.data.selectedVariant.hiddenPrice">
+      <p class="shippingNotice"><b>FREE Shipping.</b> All the time. Ship to anywhere in the United States for free.</p>
+      <p class="phoneRetailPrice" ng-show="phoneController.details.data.selectedVariant.msrp">
+        <span class="pull-left">Retail Price</span>{{phoneController.details.data.selectedVariant.msrp|currency:""}}</p>
+      <p class="phonePromoDiscount" ng-show="phoneController.details.data.selectedVariant.discount"><span class="pull-left">Promotional discount</span>{{phoneController.details.data.selectedVariant.discount|currency:""}}</p>
+      <div class="colorOptions" ng-show="phoneController.details.data.colorOptions.length>1">
+        <span ng-repeat="color in phoneController.details.data.colorOptions" style="border:2px solid transparent"><input type="radio" name="variantColor" value="{{color}}" id="{{color}}" ng-model="phoneController.details.data.selectedColor" ng-click="phoneController.details.data.updateSelectedVariant()"><label for="{{color}}" style="background-color:{{phoneController.details.data.colorValues[color]}}">{{color}}</label></input></span>
+      </div>
+      <div class="memOptions" ng-show="phoneController.details.data.memoryOptions.length>1">
+        <span ng-repeat="mem in phoneController.details.data.memoryOptions"><input type="radio" name="variantMem" value="{{mem}}" id="{{mem}}" ng-model="phoneController.details.data.selectedMemory" ng-click="phoneController.details.data.updateSelectedVariant()"><label for="{{mem}}">{{mem}}</label></input></span>
+      </div>
+    </div>
+    <div class="col-xs-12 phoneBottom">
+      <div class="pull-left" ng-show="phoneController.details.data.isRedVentures">
+        <h3 class="callNow">        
+        <banner-item ng-show="phoneController.details.data.isRedVentures" url="get_banner_phone_details" extraheaders="{RedVentures:true}" index="0" options="text" style="width:200px;height:30px"></banner-item>
+        <banner-item ng-show="!phoneController.details.data.isRedVentures" url="get_banner_phone_details" extraheaders="{RedVentures:false}" index="0" options="text" style="width:200px;height:30px"></banner-item>
+        </h3>
+      </div>
+      <div class="pull-right">
+        <h2 ng-if="!phoneController.details.data.selectedVariant.hiddenPrice" class="phoneFinalPrice">{{phoneController.details.data.selectedVariant.price|currency:""}}</h2>
+        <a class="btn btn-primary" ng-click="cartController.addToCart(phoneController.details.data)" ng-disabled="phoneController.details.data.selectedVariant==null || phoneController.details.data.selectedVariant.noMore">{{phoneController.details.data.selectedVariant.cartLabel}}</a>
+      </div>
+    </div>
+    <p class="smallPrint" ng-show="phoneController.details.data.disclaimerFull.length > 0">{{phoneController.details.data.disclaimerFull}}</p>
+  </div>
+</div>

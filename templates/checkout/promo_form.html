@@ -1,0 +1,18 @@
+<section>
+  <div class="col-xs-6">
+    <ul class="details">
+      <li>FREE Ground Shipping</li>
+      <li>Keep your current phone number</li>
+      <li>14 Day Money Back Guarantee</li>
+    </ul>
+  </div>
+  <div class="col-xs-6">
+    <p>Got a promo code?</p>
+    <form class="form-group" name="promoForm">
+      <label for="promoCode">Promo Code</label>
+      <input type="text" class="form-control input-sm" ng-model="checkoutController.data.promoCode.value" ng-change="checkoutController.cleanPromoStatus();"  placeholder="Enter code" required="required">
+      <a class="btn btn-primary btn-sm" ng-disabled="promoForm.$invalid" ng-click="checkoutController.applyPromoCode()">Apply Code</a>
+      <span class="errorMessage" style="color:{{checkoutController.data.promoCode.status==0?'green':'red'}}">{{checkoutController.data.promoCode.message}}</span>
+    </form>
+  </div>
+</section>

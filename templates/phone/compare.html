@@ -1,0 +1,244 @@
+<div>
+  <section class="compareHeader">
+    <h2>Compare Phones</h2>
+    <div class="col-xs-12">
+      <a ng-href="{{pathMap._phones._hash}}">Return to Shop Phones</a>
+    </div>
+  </section>
+  <div ng-show="phoneController.compareItems.data.items.length==0" style="padding:50px;padding-top:100px">
+  <h3>No item to compare.</h3>
+  </div>
+  <section class="compare hidden-xs hidden-sm" ng-show="phoneController.compareItems.data.items.length!=0">
+    <div class="col-xs-12 sticker" data-spy="affix">
+      <div class="col-xs-2 variableLabel">
+        <div>
+          <p>Phones</p>
+        </div>
+      </div>
+      <div class="col-xs-10">
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="phoneController.compareItems.getValueById(idx,'id')">
+          <a href="{{pathMap._phoneDetails._hash}}{{phoneController.compareItems.getValueById(idx,'id')}}/"><img ng-src="{{phoneController.compareItems.getValueById(idx,'compare_img')}}"></img></a>
+          <div>
+            <p class="title"><span class="phoneBrand">{{phoneController.compareItems.getValueById(idx,'brand')}}</span><span class="phoneName">{{phoneController.compareItems.getValueById(idx,'name')}}</span></p>
+            <h4 class="phoneFinalPrice">{{phoneController.compareItems.getValueById(idx,'price')}}</h4>
+            <a href="{{pathMap._phoneDetails._hash}}{{phoneController.compareItems.getValueById(idx,'id')}}/">Learn more</a>
+          </div>
+          <a class="remove" href="javascript:" ng-click="phoneController.compareItems.removeItem(phoneController.compareItems.data.items[idx])"><i class="glyphicon glyphicon-remove-circle"></i></a>
+        </div>
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="!phoneController.compareItems.getValueById(idx,'id')">
+          <a class="addphone" ng-href="{{pathMap._phones._hash}}"><h3>Add a phone</h3></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <div class="col-xs-2 variableLabel">
+        <div>
+          <p>Promotions</p>
+        </div>
+        <div>
+          <p>Customer Rating</p>
+        </div>
+      </div>
+      <div class="col-xs-10">
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="phoneController.compareItems.getValueById(idx,'id')">
+          <div>
+            <p>FREE SHIPPING. All the time. Ship to anywhere in the United States free.</p>
+          </div>
+          <div>
+            <p class="rating">
+              <span>
+                {{phoneController.getRateStarClass(phoneController.compareItems.getValueById(idx,'rate'))}}
+              </span>
+              <a class="reviews">{{phoneController.compareItems.getValueById(idx,'review')}}</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="!phoneController.compareItems.getValueById(idx,'id')">
+          <div><p></p></div>
+          <div><p></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 sub-section">
+      <h2>Features</h2>
+    </div>
+    <div class="col-xs-12">
+      <div class="col-xs-2 variableLabel">
+        <div>
+          <p>Phone Type/OS</p>
+        </div>
+        <div>
+          <p>Display</p>
+        </div>
+        <div>
+          <p>Camera</p>
+        </div>
+        <div>
+          <p>Wi-Fi</p>
+        </div>
+        <div>
+          <p>Sprint 4G Network</p>
+        </div>
+        <div>
+          <p>Hotspot</p>
+        </div>
+        <div>
+          <p>QWERTY Keyboard</p>
+        </div>
+        <div>
+          <p>Web Browser</p>
+        </div>
+        <div>
+          <p>Flash Player</p>
+        </div>
+        <div>
+          <p>Email</p>
+        </div>
+        <div>
+          <p>Video</p>
+        </div>
+        <div>
+          <p>Music Player</p>
+        </div>
+        <div>
+          <p>Navigation Services</p>
+        </div>
+        <div>
+          <p>Speakerphone</p>
+        </div>
+        <div>
+          <p>Memory</p>
+        </div>
+        <div>
+          <p>Processor</p>
+        </div>
+        <div>
+          <p>Calendar</p>
+        </div>
+        <div>
+          <p>Visual Voicemail</p>
+        </div>
+        <div>
+          <p>Nationwide Sprint 3G Network</p>
+        </div>
+        <div>
+          <p>Bluetooth</p>
+        </div>
+      </div>
+      <div class="col-xs-10">
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="phoneController.compareItems.getValueById(idx,'id')">
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'os')}}</p>
+          </div>
+          <div title="{{phoneController.compareItems.getValueById(idx,'compareFeatures.general.display.description')}}">
+            <p>{{phoneController.compareItems.getValueById(idx,'display.value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'camera.value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'wifi')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["4g"].value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'hotspot')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["qwerty-keyboard"].value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["web-browser"].value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["flash-player"]')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'email')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'video')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["music-player"]')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'gps')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'speakerphone')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'memory')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'processor.value')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'calendar')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'voicemail')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'["3g"]')}}</p>
+          </div>
+          <div>
+            <p>{{phoneController.compareItems.getValueById(idx,'bluetooth.value')}}</p>
+          </div>
+        </div>
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="!phoneController.compareItems.getValueById(idx,'id')">
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+          <div><p></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 sub-section">
+      <h2>Specifications</h2>
+    </div>
+    <div class="col-xs-12">
+      <div class="col-xs-2 variableLabel">
+        <div>
+          <p>Battery Life</p>
+        </div>
+        <div>
+          <p>Weight &amp; Dimensions</p>
+        </div>
+      </div>
+      <div class="col-xs-10">
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="phoneController.compareItems.getValueById(idx,'id')">
+          <div>
+            <p>Talk Time: {{phoneController.compareItems.getValueById(idx,'talking_time')}}</p>
+          </div>
+          <div>
+            <p>Weight: {{phoneController.compareItems.getValueById(idx,'weight')}}, Dimensions: {{phoneController.compareItems.getValueById(idx,'height')}}H x {{phoneController.compareItems.getValueById(idx,'width')}}W x {{phoneController.compareItems.getValueById(idx,'depth')}}D, Screen Size: {{phoneController.compareItems.getValueById(idx,'screen_size')}}</p>
+          </div>
+        </div>
+        <div class="col-xs-3" ng-repeat="idx in [0,1,2,3]" ng-if="!phoneController.compareItems.getValueById(idx,'id')">
+          <div><p></p></div>
+          <div><p></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <phone-list-legal></phone-list-legal>
+</div>

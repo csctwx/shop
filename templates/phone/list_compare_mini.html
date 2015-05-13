@@ -1,0 +1,8 @@
+<div class="panel-body filter compare">
+  <ul>
+    <li ng-repeat="idx in [0,1,2,3]">
+      <a style="background-color:#EEEEFF" href="{{pathMap._phoneDetails._hash}}{{phoneController.compareItems.getValueById(idx,'id')}}/" ng-if="phoneController.compareItems.getValueById(idx,'id')"><img style="height:58px;width:40px" ng-src="{{phoneController.compareItems.getValueById(idx,'compare_th_img')}}"></a>
+    </li>
+  </ul>
+  <a id="compareBtn" class="btn btn-primary btn-block" ng-disabled="phoneController.compareItems.data.items.length==0" ng-href="{{pathMap._phoneCompare._hash}}">Compare</a>
+</div>

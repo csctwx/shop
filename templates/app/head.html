@@ -1,0 +1,79 @@
+<header class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" ng-controller="cartController as cartController" id="cartController">
+  <div class="container">
+    <div class="col-xs-3 col-md-2 linkHome hidden-xs hidden-sm">
+      <a href="{{pathMap._home._hash}}">Home</a>
+    </div>
+    <div class="col-xs-9 col-md-10 pull-right">
+      <div class="navbar pull-left visible-md topnav">
+        <ul class="navbar-wrapper">
+          <li class="navbar-item"><a href="#" data-toggle="modal" data-target="#coverageMap">Coverage Map</a></li>
+          <li class="navbar-item"><a href="http://stores.prepaid.sprint.com?INTNAV=Nav:FindStore">Find a Store</a></li>
+        </ul>
+        <div class="modal fade" href="" id="coverageMap" tabindex="-1" role="dialog" aria-labelledby="coverageMap" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <strong class="pull-left">Coverage Map</strong>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <iframe src="http://coverage.sprint.com/mycoverage.jsp?id=SPREPAID" scrolling="no" width="100%" height="467" frameborder="0"></iframe>
+                <p>Sprint Prepaid offers dependable, nationwide coverage for voice and data. To view the coverage in your area, select the combination of voice and data cover you want to see, then enter an address or just your zip code in the fields to the right.</p>
+                <p><strong>Green regions denote voice coverage. Orange, blue and purple regions denote data coverage.</strong></p>
+                <p>View <a href="http://coverage.sprint.com/IMPACT.jsp?INTNAV=NAV:CoverageMap">Coverage Map</a> on a full page and visit the <a class="more" href="http://www.sprint.com/prepaid">Shop</a> for Sprint Prepaid phone options.</p>
+                <p class="legal">Nationwide Sprint Network. This tool provides high-level estimates of our wireless coverage. Coverage is not available everywhere and varies based on a number of factors. Our coverage maps provide high level estimates of our coverage areas when using your device outdoors under optimal conditions. Coverage isn't available everywhere. Estimating wireless coverage and signal strength is not an exact science. There are gaps in coverage within our estimated coverage areas that, along with other factors both within and beyond our control (network problems, software, signal strength, your wireless device, structures, buildings, weather, geography, topography, etc.), will result in dropped and blocked connections, slower data speeds, or otherwise impact the quality of services. Services that rely on location information, such as E911 depend on your device's ability to acquire satellite signals (typically not available indoors) and network coverage. E911 services also depend local emergency service provider systems/support. Estimated future coverage subject to change.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar pull-right visible-md topnav">
+        <ul class="navbar-wrapper">
+          <li class="navbar-item"><a href="https://myaccountportal.sprint.com/servlet/ecare?inf_action=login&action=accountBill&sl=?INTNAV=:MyAcct:Refill">Refill</a></li>
+          <li class="navbar-item"><a href="http://support.sprint.com/support/?INTNAV=SPP:Support#!/?INTNAV=Nav:Support">Support</a></li>
+          <li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/secure/myaccount/landingPage.jsp?INTNAV=:MyAcct:Activate">Activate</a></li>
+          <li class="navbar-item"><a href="https://mysprint.sprint.com/mysprint/pages/sl/global/login.jsp?INTNAV=:MyAcct">My Account</a></li>
+          <li class="navbar-item"><a href="">Sign in</a></li>
+        </ul>
+      </div>
+      <div class="visible-sm visible-xs greeting">
+        <button type="button" class="navbar-toggle opened" data-toggle="offcanvas" data-target=".navmenu">
+          <i class="glyphicon glyphicon-remove"></i>
+        </button>
+        <!--p class="greeting-name"><span>Good morning, </span>UserName</p>
+        <p class="greeting-number">PhoneNumber</p-->
+      </div>
+      <ul class="nav navmenu-nav nav-pills hidden-md hidden-lg">
+        <li><a href="{{pathMap._shop._hash}}">Shop</a></li>
+        <li><a href="{{pathMap._phones._hash}}">All Phones</a></li>
+        <li><a href="{{pathMap._phones._hash}}Android/">Android Phones</a></li>
+        <!--li><a href="{{pathMap._phones._hash}}iPhone/">iPhones</a></li-->
+        <!--
+        <li><a href="{{pathMap._nextversion._hash}}">Accessories</a></li>
+        -->
+          <li><a href="{{pathMap._plan._hash}}">Shop Plans</a></li>
+          <li><a href="{{pathMap._page._hash}}additionalServices/">Additional Services</a></li>
+      </ul>
+      <ul class="nav navmenu-nav nav-pills hidden-xs hidden-sm">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="{{pathMap._shop._hash}}">Shop <b class="caret"></b></a>
+          <ul class="dropdown-menu sub-menu">
+            <li data-toggle="collapse" data-target=".nav-collapse"><a href="{{pathMap._phones._hash}}">All Phones</a></li>
+            <li data-toggle="collapse" data-target=".nav-collapse"><a href="{{pathMap._phones._hash}}Android/">Android Phones</a></li>
+            <!--li data-toggle="collapse" data-target=".nav-collapse"><a href="{{pathMap._phones._hash}}iPhone/">iPhones</a></li-->
+            <!--li><a href="{{pathMap._nextversion._hash}}">Accessories</a></li>
+            <li><a href="{{pathMap._nextversion._hash}}">Deals</a></li-->
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="{{pathMap._plan._hash}}">Plans <b class="caret"></b></a>
+          <ul class="dropdown-menu sub-menu">
+            <li><a href="{{pathMap._plan._hash}}">Shop Plans</a></li>
+            <li><a href="{{pathMap._page._hash}}additionalServices/">Additional Services</a></li>
+          </ul>
+        </li>
+        <cart-room></cart-room>
+      </ul>
+    </div>
+  </div>
+</header>

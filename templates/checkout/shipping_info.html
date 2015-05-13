@@ -1,0 +1,32 @@
+<section class="shippingInfo">
+  <div class="col-xs-12">
+    <h4>Shipping Information</h4>
+    <dl>
+      <dt>First Name</dt>
+      <dd>{{checkoutController.data.shippingInfo.firstName}}</dd>
+      <dt>Last Name</dt>
+      <dd>{{checkoutController.data.shippingInfo.lastName}}</dd>
+      <dt>Address 1</dt>
+      <dd>{{checkoutController.data.shippingInfo.address1}}</dd>
+      <dt>Address 2</dt>
+      <dd>{{checkoutController.data.shippingInfo.address2}}</dd>
+      <dt>City</dt>
+      <dd>{{checkoutController.data.shippingInfo.city}}</dd>
+      <dt>State</dt>
+      <dd>{{checkoutController.data.shippingInfo.state}}</dd>
+      <dt>Zip Code</dt>
+      <dd>{{checkoutController.data.shippingInfo.zipCode}}</dd>
+      <dt>Phone Number</dt>
+      <dd>{{checkoutController.data.shippingInfo.phoneNumber}}</dd>
+      <dt>Email</dt>
+      <dd>{{checkoutController.data.shippingInfo.email}}</dd>
+    </dl>
+    <a href="" ng-click="checkoutController.restartCheckout()">Edit information</a>
+    <div class="col-xs-12">
+      <a class="btn btn-primary pull-right" ng-click="checkoutController.doComplete()" ng-disabled="checkoutController.isBlackZipcode(checkoutController.data.shippingInfo.zipCode) || shippingForm.$invalid">Complete Order <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+    </div>
+    <div class="col-xs-12">
+      <a class="pull-right" href="#cancel" ng-click="checkoutController.cancelOrder()">Cancel Order</a>
+    </div>
+  </div>
+</section>

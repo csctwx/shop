@@ -1,0 +1,5 @@
+<div id="phoneController" ng-controller="phoneController as phoneController">
+  <phone-list ng-show="app.isCurrentContext(pathMap._phones._hash)"></phone-list>
+  <phone-details ng-show="app.isCurrentContext(pathMap._phoneDetails._hash)"></phone-details>
+  <phone-compare ng-show="app.isCurrentContext(pathMap._phoneCompare._hash)"></phone-compare>
+</div>

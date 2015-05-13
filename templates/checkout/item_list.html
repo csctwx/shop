@@ -1,0 +1,20 @@
+<div style="min-height:80px">
+  <h2 ng-show="checkoutController.data.equipments.length!=0">Your Cart</h2>
+  <form name="itemsForm">
+    <div class="cart-item alert alert-dismissible fade in" role="alert" ng-repeat="item in checkoutController.data.equipments">
+      <div class="pull-left col-xs-6">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" ng-click="cartController.removeItem(item)"><span aria-hidden="true">×</span></button>
+        <a style="color:#000" ng-href="{{pathMap._phoneDetails._hash}}{{item.deviceId}}/">
+        <img ng-src="{{item.image}}"></img>
+        <h4>{{item.brand}} {{item.name}} {{item.color}} {{item.memory}}</h4>
+        </a>
+      </div>
+      <div class="quantity" style="padding-right:20px">
+        <input type="number" ng-readonly="checkoutController.step!=1" ng-model="item.quantity" ng-change="cartController.save()" 
+          min="1" max="{{item.purchaseLimit&&(item.purchaseLimit < cartController.config.PURCHASE_LIMITATION)?item.purchaseLimit:cartController.config.PURCHASE_LIMITATION}}" 
+          style="width:50px;text-align:center;{{checkoutController.step!=1?'border:0;padding-top:8px;':''}}" required="required"/>
+      </div>
+      <p style="width:120px" class="price pull-right">{{item.modelPrice|currency}}</p>
+    </div>
+  </form>
+</div>

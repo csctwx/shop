@@ -1,0 +1,437 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "07229ad1-0008-4a8e-9672-8c4c4472a135",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"comparePhoneResponse": {
+				"comparePhoneList": {
+					"comparePhone": {
+						"id": {
+							"$": "SPHL710ASB"
+						},
+						"generalFeatures": [{
+							"title": {
+								"$": "Certified pre-owned"
+							},
+							"description": {
+								"$": "Get a phone that looks - and works - just like new. Boost certified pre-owned phones are inspected, tested and equipped with the latest software. <a href=\"\/certifiedpreowned\/?camp=INTC_cpo_bullet\">Learn more<\/a>"
+							},
+							"type": {
+								"$": "cpo"
+							}
+						},
+						{
+							"title": {
+								"$": "Android&trade; OS 4.2 (Jelly Bean)"
+							},
+							"description": {
+								"$": "Enjoy the most-loved features of Android \\96 easy multitasking, customizable home screens and deep interactivity. "
+							},
+							"type": {
+								"$": "os"
+							}
+						},
+						{
+							"title": {
+								"$": "Beats Audio&#8482;"
+							},
+							"description": {
+								"$": "Hear deeper and richer sound for music, movies and media with one of the most respected audio brands in consumer electronics."
+							}
+						},
+						{
+							"title": {
+								"$": "Dual Mode 3G\/4G LTE"
+							},
+							"description": {
+								"$": "Switch seamlessly between Sprint's reliable 3G nationwide network, which reaches more than 276 million people, and Sprint's blazing-fast 4G LTE network, reaching 340 million people and counting. <a href=\"http:\/\/www.boostmobile.com\/coverage\/\" style=\"color:#E7781D\">Check coverage<\/a>."
+							}
+						},
+						{
+							"title": {
+								"$": "4.3\\94 WVGA Super LCD2 Touchscreen"
+							},
+							"description": {
+								"$": "See everything in vibrant display on the crisp 4.3-inch screen."
+							},
+							"type": {
+								"$": "display"
+							}
+						},
+						{
+							"title": {
+								"$": "1.2GHZ Dual Core Processor"
+							},
+							"description": {
+								"$": "Get the complete Internet experience in a flash."
+							},
+							"type": {
+								"$": "processor"
+							}
+						},
+						{
+							"title": {
+								"$": "Enhanced 5MP Camera\\A0with HD Video"
+							},
+							"description": {
+								"$": "Score the perfect shot with dual cameras and record all of your victories in high definition."
+							},
+							"type": {
+								"$": "camera"
+							}
+						},
+						{
+							"title": {
+								"$": "Wi-Fi & GPS Enabled"
+							},
+							"description": {
+								"$": "Connect to your local Wi-Fi network for even faster speeds and find where you need to go around town or across the country with GPS access."
+							},
+							"type": {
+								"$": "gps"
+							}
+						},
+						{
+							"title": {
+								"$": "Get Android Apps on Google Play&#8482;"
+							},
+							"description": {
+								"$": "Download apps, games, movies, music and books \\97 it's your one-stop shop for everything awesome."
+							}
+						},
+						{
+							"title": {
+								"$": "Environmental Certification"
+							},
+							"description": {
+								"$": "Platinum certified by the UL Environment, this phone contains environmentally preferable materials with a minimal environmental impact. <a class=\"inline-ule\" href=\"#ule\">More info.<\/a>"
+							}
+						},
+						{
+							"title": {
+								"$": "5MP Rear-facing camera with video AND 1.3MP front-facing camera"
+							}
+						},
+						{
+							"title": {
+								"$": "3-way calling"
+							}
+						},
+						{
+							"title": {
+								"$": "3.5mm headset jack"
+							}
+						},
+						{
+							"title": {
+								"$": "Accelerometer"
+							}
+						},
+						{
+							"title": {
+								"$": "Access to Boost ID"
+							}
+						},
+						{
+							"title": {
+								"$": "Access to Gmail<sup>&reg;<\/sup> and Google Talk&trade;"
+							}
+						},
+						{
+							"title": {
+								"$": "Access to Google Play&trade;"
+							}
+						},
+						{
+							"title": {
+								"$": "Audio Recorder"
+							}
+						},
+						{
+							"title": {
+								"$": "Calendar"
+							},
+							"type": {
+								"$": "calendar"
+							}
+						},
+						{
+							"title": {
+								"$": "Call waiting"
+							}
+						},
+						{
+							"title": {
+								"$": "Caller ID"
+							}
+						},
+						{
+							"title": {
+								"$": "Dedicated Home, Search and Menu Keys"
+							}
+						},
+						{
+							"title": {
+								"$": "Dual Language Settings"
+							}
+						},
+						{
+							"title": {
+								"$": "Hearing aid device compatibility"
+							}
+						},
+						{
+							"title": {
+								"$": "Music player"
+							},
+							"description": {
+								"$": "Keep all your classic cuts and new favorites as close as your pocket."
+							}
+						},
+						{
+							"title": {
+								"$": "One-click access to Facebook<sup>&reg;<\/sup>, Twitter<sup>&reg;<\/sup> and more"
+							}
+						},
+						{
+							"title": {
+								"$": "Picture and video sharing"
+							}
+						},
+						{
+							"title": {
+								"$": "Portrait to Landscape auto-rotate"
+							}
+						},
+						{
+							"title": {
+								"$": "Speakerphone"
+							},
+							"type": {
+								"$": "speakerphone"
+							}
+						},
+						{
+							"title": {
+								"$": "Vibrate mode"
+							},
+							"description": {
+								"$": "Don&#146;t be that guy whose phone goes off in the movie. Just don&#146;t."
+							}
+						},
+						{
+							"title": {
+								"$": "Virtual QWERTY keyboard"
+							}
+						},
+						{
+							"title": {
+								"$": "Voicemail"
+							}
+						},
+						{
+							"title": {
+								"$": "Voice-activated dialing"
+							}
+						},
+						{
+							"title": {
+								"$": "Wi-Fi<sup>&reg;<\/sup> enabled"
+							},
+							"type": {
+								"$": "wifi"
+							}
+						},
+						{
+							"title": {
+								"$": "Wireless web enabled"
+							},
+							"type": {
+								"$": "web-browser"
+							}
+						},
+						{
+							"title": {
+								"$": "Video"
+							},
+							"type": {
+								"$": "video"
+							}
+						},
+						{
+							"title": {
+								"$": "1GB RAM\/8GB ROM"
+							},
+							"description": {
+								"$": "1GB RAM\/8GB ROM"
+							},
+							"type": {
+								"$": "memory"
+							}
+						},
+						{
+							"title": {
+								"$": "Visual Voicemail"
+							},
+							"description": {
+								"$": "Find the message you&#39;re looking for without having to listen to all those calls you ignored."
+							},
+							"type": {
+								"$": "visual-voicemail"
+							}
+						},
+						{
+							"title": {
+								"$": "32GB microSD&trade; card support (card not included)"
+							}
+						},
+						{
+							"title": {
+								"$": "Nationwide Sprint<sup>&#174;<\/sup> 3G Network and Nationwide Sprint<sup>&#174;<\/sup> 4G LTE Network"
+							},
+							"description": {
+								"$": "Nationwide Sprint<sup>&#174;<\/sup> 3G Network and Nationwide Sprint<sup>&#174;<\/sup> 4G LTE Network"
+							}
+						},
+						{
+							"type": {
+								"$": "4g"
+							}
+						},
+						{
+							"type": {
+								"$": "email"
+							}
+						},
+						{
+							"type": {
+								"$": "music-player"
+							}
+						},
+						{
+							"type": {
+								"$": "qwerty-keyboard"
+							}
+						},
+						{
+							"title": {
+								"$": "Stereo Bluetooth&#174;"
+							},
+							"description": {
+								"$": "Listen to music and answer calls wirelessly, in stereo, when you pair with a Bluetooth&#174; headset (sold separately)."
+							},
+							"type": {
+								"$": "bluetooth"
+							}
+						},
+						{
+							"title": {
+								"$": "Nationwide Sprint<sup>&reg;<\/sup> 3G Network"
+							},
+							"description": {
+								"$": "Fast surfing, messaging, downloading&#151;that&#39;s the power of 3G."
+							},
+							"type": {
+								"$": "3g"
+							}
+						}],
+						"technicalFeatures": {
+							"os": {
+								"$": "Android&#153; 4.1"
+							},
+							"group": [{
+								"@id": "dimensions",
+								"order": {
+									"$": "1"
+								},
+								"thumb": {
+									"$": "\/_img\/beyond_talk\/dimensions\/samsungintercept.png"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "height",
+										"$": "5.04\""},{"@order":"2","@type":"depth","$":"0.36\""
+									},
+									{
+										"@order": "3",
+										"@type": "width",
+										"$": "2.63\""},{"@order":"4","@type":"weight","$":"4.3oz"},{"@order":"5","@type":"screen_size","$":"4.3\""
+									}]
+								}
+							},
+							{
+								"@id": "battery",
+								"order": {
+									"$": "2"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "talking_time",
+										"$": "17 hours"
+									},
+									{
+										"@order": "2",
+										"@type": "battery_type",
+										"$": "Li-Ion Battery"
+									},
+									{
+										"@order": "3",
+										"@type": "removable",
+										"$": "Yes"
+									},
+									{
+										"@order": "4",
+										"@type": "memory",
+										"$": "1GB RAM, 8GB ROM"
+									},
+									{
+										"@order": "5",
+										"@type": "processor"
+									}]
+								}
+							},
+							{
+								"@id": "whats_included",
+								"order": {
+									"$": "3"
+								},
+								"specs": {
+									"spec": [{
+										"@order": "1",
+										"@type": "regular",
+										"$": "Handset"
+									},
+									{
+										"@order": "2",
+										"@type": "regular",
+										"$": "Battery"
+									},
+									{
+										"@order": "3",
+										"@type": "regular",
+										"$": "Charger"
+									},
+									{
+										"@order": "4",
+										"@type": "regular",
+										"$": "Activation Insert"
+									}]
+								}
+							}]
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

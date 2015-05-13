@@ -1,0 +1,118 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "23f3e7f1-e4d3-4630-981f-d675ee6390ce",
+			"@class": "header",
+			"@name": "section_top",
+			"@position": "layout_full",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-CFh6XVKM1TW"
+					},
+					"name": {
+						"$": "Home Page Top Banner"
+					},
+					"url": {
+						"$": "#!\/home\/shop\/phones\/"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/j\/h\/h\/promo-full-01.jpg?action=access&assetId=A-CFh6XVKM1TW"
+					},
+					"title": {
+						"$": "Nationwide freedom starts at $35 per month"
+					},
+					"description": {
+						"$": "Finally, something different from your wireless relationship. Sprint Prepaid offers unlimited talk and text with data options from just $35\/month. No credit checks, no annual contracts. All on the Sprint Nationwide Network."
+					},
+					"linkText": {
+						"$": "Learn more"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		},
+		{
+			"@uuid": "d185de6a-00de-46cc-ba4d-562dffd9903c",
+			"@class": "multiple_banner",
+			"@name": "section_bottom",
+			"@position": "layout_left",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-DFh6XVKM1TW"
+					},
+					"name": {
+						"$": "Find Store Banner"
+					},
+					"url": {
+						"$": "#!\/home\/nextversion\/"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/g\/c\/f\/store.png?action=access&assetId=A-DFh6XVKM1TW"
+					},
+					"title": {
+						"$": "Find us in a store near you"
+					},
+					"description": {
+						"$": "Come test drive our phones and have our friendly staff guide you through the prepaid process."
+					},
+					"linkText": {
+						"$": "Find a store"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		},
+		{
+			"@uuid": "40869a86-5309-456d-92b9-9d575efaa0b4",
+			"@class": "multiple_banner",
+			"@name": "section_bottom",
+			"@position": "layout_right",
+			"@code": "0",
+			"getBannerResponse": {
+				"banner": {
+					"assetId": {
+						"$": "A-EFh6XVKM1TW"
+					},
+					"name": {
+						"$": "NationWide LTE Banner"
+					},
+					"url": {
+						"$": "#!\/home\/nextversion\/"
+					},
+					"imageUrl": {
+						"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/a\/d\/e\/signal.png?action=access&assetId=A-EFh6XVKM1TW"
+					},
+					"title": {
+						"$": "Nationwide 4G LTE network"
+					},
+					"description": {
+						"$": "High Definition Voice, fast data speeds, and better coverage than ever before. All on the Nationwide Sprint Network."
+					},
+					"linkText": {
+						"$": "Check coverage"
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}

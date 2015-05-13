@@ -1,0 +1,266 @@
+{
+	"responses": {
+		"response": [{
+			"@uuid": "123845b8-b51b-4343-be90-3200d774cf58",
+			"@class": "",
+			"@name": "Section 19029",
+			"@code": "0",
+			"getFeaturesResponse": {
+				"phoneFeatures": {
+					"generalFeatures": [{
+						"title": {
+							"$": "Android™ 4.4 (KitKat)"
+						},
+						"description": {
+							"$": "Enjoy the most-loved features of Android ֠sleek simplicity and speed."
+						},
+						"type": {
+							"$": "os"
+						}
+					},
+					{
+						"title": {
+							"$": "5.0\" HD Edgeless Display"
+						},
+						"description": {
+							"$": "Experience videos, apps, and pictures like never before.  Feel the future with this edgeless screen."
+						},
+						"type": {
+							"$": "display"
+						}
+					},
+					{
+						"title": {
+							"$": "8MP + Flash | Camera with 1.2MP FF"
+						},
+						"description": {
+							"$": "Take quality pictures w\/1080p Full HD Video, and share them with your friends and family."
+						},
+						"type": {
+							"$": "camera"
+						}
+					},
+					{
+						"title": {
+							"$": "3G\/4G LTE\/Enhanced LTE*"
+						},
+						"description": {
+							"$": "When coverage is available, experience broadband-like download speeds. The average download speeds range from 400 to 700 Kbps with peak rates up to 2 Mbps. All while on the Sprint network."
+						},
+						"type": {
+							"$": "3g"
+						}
+					},
+					{
+						"title": {
+							"$": "HD Voice+"
+						},
+						"description": {
+							"$": "Experience crystal-clear call quality with reduced background noise while calling another HD Voice-enabled phone on the Sprint network."
+						},
+						"type": {
+							"$": "voice"
+						}
+					},
+					{
+						"title": {
+							"$": "2040mAH Lithium Ion Battery"
+						},
+						"description": {
+							"$": "Enjoy up to 13 hours of talk time with the 2040 mAh Lithium-Ion battery."
+						},
+						"type": {
+							"$": "battery"
+						}
+					},
+					{
+						"title": {
+							"$": "QualcommΠSnapdragonT Processor"
+						},
+						"description": {
+							"$": "Qualcomm SnapdragonT processors give your mobile devices breathtaking speed, jaw-dropping graphics and long battery life so you can do more of the things you love."
+						},
+						"type": {
+							"$": "processor"
+						}
+					},
+					{
+						"title": {
+							"$": "Mobile Hotspot"
+						},
+						"description": {
+							"$": "This is hot! Your phone doubles as a personal portable hotspot and lets you connect to any Wi-Fi device. Additional fee required for hotspot functionality."
+						},
+						"type": {
+							"$": "hotspot"
+						}
+					},
+					{
+						"title": {
+							"$": "Sprint Zone"
+						},
+						"description": {
+							"$": "Your one-stop source to access your wireless account, phone tips, news, a list of top apps and more. Access Sprint TV, GPS Navigation, NBA Game Time, NASCAR Mobile '13 and Sprint Music Plus."
+						}
+					},
+					{
+						"title": {
+							"$": "Sprint Spark™"
+						},
+						"description": {
+							"$": "This Sprint Spark capable, enhanced LTE device was designed to take full advantage of all three of Sprint's LTE bands to deliver our fastest data speeds ever offered and improved in-building coverage. Sprint Spark enhanced LTE coverage is available in select markets. Visit sprint.com\/coverage for more info."
+						}
+					}],
+					"technicalFeatures": {
+						"os": {
+							"$": "Android™ 4.4 Kit Kat"
+						},
+						"processor": {
+							"$": "1.2 GHz Quad-Core Qualcomm® Snapdragon™ Processor"
+						},
+						"memory": {
+							"$": "8GB ROM \/ 1.5GB RAM *MicroSD card slot supports up to 32GB (not included)"
+						},
+						"group": [{
+							"@id": "dimensions",
+							"order": {
+								"$": "1"
+							},
+							"specs": {
+								"spec": [{
+									"@order": "1",
+									"@type": "height",
+									"$": "5.17\""},{"@order":"2","@type":"depth","$":"0.4\""
+								},
+								{
+									"@order": "3",
+									"@type": "width",
+									"$": "2.64\""},{"@order":"4","@type":"weight","$":"4.97oz."},{"@order":"5","@type":"screen_size","$":"5.0\" HD Edgeless Display"
+								}]
+							}
+						},
+						{
+							"@id": "battery",
+							"order": {
+								"$": "2"
+							},
+							"specs": {
+								"spec": [{
+									"@order": "2",
+									"@type": "talking_time",
+									"$": "Up to 13 hours"
+								},
+								{
+									"@order": "1",
+									"@type": "battery_type",
+									"$": "2014 mAH Lithium Ion Battery"
+								},
+								{
+									"@order": "3",
+									"@type": "removable",
+									"$": "No"
+								}]
+							}
+						},
+						{
+							"@id": "whats_included",
+							"order": {
+								"$": "3"
+							},
+							"specs": {
+								"spec": [{
+									"@order": "1",
+									"@type": "regular",
+									"$": "AQUOS Crystal Handset"
+								},
+								{
+									"@order": "2",
+									"@type": "regular",
+									"$": "2014 mAH Lithium Ion Battery"
+								},
+								{
+									"@order": "3",
+									"@type": "regular",
+									"$": "USB Cable & Charger"
+								},
+								{
+									"@order": "4",
+									"@type": "regular",
+									"$": "Printed Materials"
+								}]
+							}
+						}]
+					},
+					"specialFeatures": [{
+						"title": {
+							"$": "GPS Navigation"
+						},
+						"description": {
+							"$": "Blaze new trails with satellite-guided, turn-by-turn directions."
+						}
+					},
+					{
+						"title": {
+							"$": "Calendar"
+						},
+						"type": {
+							"$": "calendar"
+						}
+					},
+					{
+						"title": {
+							"$": "Wi-Fi® enabled"
+						}
+					},
+					{
+						"title": {
+							"$": "Web"
+						},
+						"type": {
+							"$": "web-browser"
+						}
+					},
+					{
+						"title": {
+							"$": "Hearing aid device compatibility"
+						}
+					},
+					{
+						"title": {
+							"$": "Messaging (Text & Email)"
+						}
+					},
+					{
+						"title": {
+							"$": "Apps & Social Networking"
+						}
+					},
+					{
+						"title": {
+							"$": "Linked Contacts"
+						}
+					},
+					{
+						"title": {
+							"$": "Sprint ID"
+						}
+					}],
+					"specifationImage": {
+						"fileName": {
+							"$": "specifications"
+						},
+						"uRI": {
+							"$": "http:\/\/media-vip:8081\/repository\/store\/P-d0avx1PuX34\/f\/a\/g\/specifications.png?action=access&assetId=A-Tbg6XVKM1TW"
+						}
+					}
+				},
+				"status": {
+					"$": "0"
+				},
+				"description": {
+					"$": "SUCCESS"
+				}
+			}
+		}]
+	}
+}
